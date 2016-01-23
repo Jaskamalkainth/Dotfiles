@@ -7,7 +7,6 @@ alias g++='clang++ -std=c++11'
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#
 ZSH_THEME="robbyrussell"
 
 ########## To remind me of the shortcuts i created ########
@@ -23,13 +22,18 @@ echo "submit"
 echo "full_template"
 echo "short_template"
 echo "....................."
+echo "google_query"
 echo "chromekill"
 echo "relaxation_music"
 echo "empty_trash"
 
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
-########## Awesome Shortcuts Below ############
+
+google_query()
+{
+	python   ~/Scripts_increase_productivity/query_google.py
+}
 relaxation_music()
 {
 	  python ~/Scripts_increase_productivity/Relaxation_Music_For_Stress_Relief.py

@@ -23,12 +23,17 @@ echo "full_template"
 echo "short_template"
 echo "....................."
 echo "google_query"
+echo "facebook_login"
 echo "chromekill"
 echo "relaxation_music"
 echo "empty_trash"
 
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
+facebook_login()
+{
+	python ~/Scripts_increase_productivity/facebook_login.py  
+}
 
 google_query()
 {

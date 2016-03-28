@@ -13,6 +13,8 @@ ZSH_THEME="robbyrussell"
 
 echo "update_zshrc"
 echo "....................."
+echo "goto_codeforces"
+echo "goto_c_programming"
 echo "open_spoj"
 echo "open_jucy"
 echo "open_CP"
@@ -31,6 +33,15 @@ echo "empty_trash"
 
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
+
+goto_codeforces()
+{
+	cd ~/CP/codeforces/  
+}
+goto_c_programming()
+{
+	cd ~/Desktop/3-2/CS\ F211\ Data\ Structures\ \&\ Algorithms/c_programming/  
+}
 github_login()
 {
 	python ~/Scripts_increase_productivity/github_login.py  
@@ -39,7 +50,6 @@ facebook_login()
 {
 	python ~/Scripts_increase_productivity/facebook_login.py  
 }
-
 google_query()
 {
 	python   ~/Scripts_increase_productivity/query_google.py
@@ -48,7 +58,6 @@ relaxation_music()
 {
 	  python ~/Scripts_increase_productivity/Relaxation_Music_For_Stress_Relief.py
 }
-
 submit ()
 {
     cat $1 | pbcopy
@@ -57,7 +66,6 @@ empty_trash()
 {
   osascript ~/Scripts_increase_productivity/empty_trash_script.scpt
 }
-
 open_3-2()
 {
 	open ~/Documents/3-2
@@ -70,7 +78,6 @@ open_jucy()
 {
 	open ~/Downloads/jucy  
 }
-
 open_spoj()
 {
 	open ~/competitivePROGRAMMING/Spoj  
@@ -79,6 +86,7 @@ open_CP()
 {
 	open ~/CP  
 }
+
 
 full_template() {
 	if [ -e $1 ] 

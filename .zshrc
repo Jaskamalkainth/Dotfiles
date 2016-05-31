@@ -14,6 +14,7 @@ ZSH_THEME="robbyrussell"
 echo "update_zshrc"
 echo "....................."
 echo "goto_codeforces"
+echo "goto_Hackerrank"
 echo "goto_c_programming"
 echo "open_spoj"
 echo "open_jucy"
@@ -34,6 +35,10 @@ echo "empty_trash"
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
 
+goto_hackerrank()
+{
+	cd ~/CP/Hackerrank/  
+}
 goto_codeforces()
 {
 	cd ~/CP/codeforces/  
@@ -86,6 +91,7 @@ open_CP()
 {
 	open ~/CP  
 }
+
 
 
 full_template() {
